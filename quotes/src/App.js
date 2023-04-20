@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Quote from './components/quote';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="App">
+      <Quote by="Bill Gates" source="https://www.microsoft.com">
+        640kb of memory ought to be enough for anyone
+      </Quote>
+      <Quote by="Steve Jobs" source="https://www.apple.com">
+        Don't let the noise of others' opinions drown out your own inner voice
+      </Quote>
     </div>
   );
 }
